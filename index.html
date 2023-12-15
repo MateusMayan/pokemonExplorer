@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pokedex by: Mateus Mayan</title>
+        <link rel="stylesheet" href="assets/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+    </head>
+    <body>
+        <section
+            id="container"
+            data-tilt
+            data-tilt-max="5"
+            data-tilt-speed="400"
+            data-tilt-perspective="800"
+        >
+            <div id="tela"></div>
+            <div id="interactive">
+                <section id="buttons">
+                    <input
+                        type="button"
+                        value="Normal"
+                        class="normal"
+                        onclick="searchByType('normal')"
+                    />
+                    <input
+                        type="button"
+                        value="Grass"
+                        class="grass"
+                        onclick="searchByType('grass')"
+                    />
+                    <input
+                        type="button"
+                        value="Fire"
+                        class="fire"
+                        onclick="searchByType('fire')"
+                    />
+                    <input
+                        type="button"
+                        value="Water"
+                        class="water"
+                        onclick="searchByType('water')"
+                    />
+                    <input
+                        type="button"
+                        value="Electric"
+                        class="electric"
+                        onclick="searchByType('electric')"
+                    />
+                    <input
+                        type="button"
+                        value="Ice"
+                        class="ice"
+                        onclick="searchByType('ice')"
+                    />
+                    <input
+                        type="button"
+                        value="Ground"
+                        class="ground"
+                        onclick="searchByType('ground')"
+                    />
+                    <input
+                        type="button"
+                        value="Flying"
+                        class="flying"
+                        onclick="searchByType('flying')"
+                    />
+                    <input
+                        type="button"
+                        value="Poison"
+                        class="poison"
+                        onclick="searchByType('poison')"
+                    />
+                    <input
+                        type="button"
+                        value="Fighting"
+                        class="fighting"
+                        onclick="searchByType('fighting')"
+                    />
+                    <input
+                        type="button"
+                        value="Psychic"
+                        class="psychic"
+                        onclick="searchByType('psychic')"
+                    />
+                    <input
+                        type="button"
+                        value="Dark"
+                        class="dark"
+                        onclick="searchByType('dark')"
+                    />
+                    <input
+                        type="button"
+                        value="Rock"
+                        class="rock"
+                        onclick="searchByType('rock')"
+                    />
+                    <input
+                        type="button"
+                        value="Bug"
+                        class="bug"
+                        onclick="searchByType('bug')"
+                    />
+                    <input
+                        type="button"
+                        value="Ghost"
+                        class="ghost"
+                        onclick="searchByType('ghost')"
+                    />
+                    <input
+                        type="button"
+                        value="Steel"
+                        class="steel"
+                        onclick="searchByType('steel')"
+                    />
+                    <input
+                        type="button"
+                        value="Dragon"
+                        class="dragon"
+                        onclick="searchByType('dragon')"
+                    />
+                    <input
+                        type="button"
+                        value="Fairy"
+                        class="fairy"
+                        onclick="searchByType('fairy')"
+                    />
+                </section>
+                <section id="buscaPokemon">
+                    <div class="buscaPokemon_inputs">
+                        <input
+                            type="text"
+                            name="buscaPokemon"
+                            id="buscaPokemon_inputTxt"
+                            placeholder="Digite o pokemon ou ID"
+                        />
+                        <input
+                            type="button"
+                            value="Buscar"
+                            id="buscarButton"
+                            onclick="searchPokemon()"
+                        />
+                    </div>
+                    <div class="buscaPokemon_buttons">
+                        <button onclick="pokemon_Previous()">
+                            <i class="fa-solid fa-arrow-left fa-2xl"></i>
+                        </button>
+                        <button onclick="pokemon_Next()">
+                            <i class="fa-solid fa-arrow-right fa-2xl"></i>
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+        <script src="assets/pokeapi.js"></script>
+        <script src="assets/main.js"></script>
+    </body>
+</html>
